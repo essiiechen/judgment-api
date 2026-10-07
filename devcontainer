@@ -1,0 +1,20 @@
+{
+  "name": "judge-api",
+  "postCreateCommand": "bash autostart.sh",
+  "postStartCommand": "bash autostart.sh",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "judge-api",
+      "visibility": "public",
+      "onAutoForward": "silent"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  }
+}
